@@ -5,8 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
-h2 {
+body h2 {
   font-size: 32px;
 }
 
@@ -35,13 +34,11 @@ h2 {
   display: inline-block;
   margin: 0 10px;
 }
-
-.navbar .nav-links a {
+.navbar .nav-links li a {
   text-decoration: none;
   font-weight: bold;
 }
-
-.navbar .nav-links a:hover {
+.navbar .nav-links li a:hover {
   color: #ff7e5f;
 }
 
@@ -74,13 +71,11 @@ h2 {
 .main .content {
   width: 50%;
 }
-
-.main h1 {
+.main .content h1 {
   font-size: 48px;
   color: #ff7e5f;
 }
-
-.main p {
+.main .content p {
   font-size: 18px;
 }
 
@@ -97,13 +92,11 @@ h2 {
   text-align: center;
   padding: 50px 10px;
 }
-
-.card-list {
+.center-section .card-list {
   display: flex;
   justify-content: space-between;
 }
-
-.card {
+.center-section .card-list .card {
   background: white;
   padding: 20px;
   width: 27%;
@@ -126,6 +119,9 @@ h2 {
     align-items: center;
     gap: 50px;
   }
+}
+
+@media screen and (max-width: 992px) {
   .card {
     width: 80%;
   }
