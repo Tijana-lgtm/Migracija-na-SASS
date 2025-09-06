@@ -28,6 +28,12 @@ body h2 {
   list-style: none;
   padding: 0;
 }
+@media (max-width: 576px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .navbar .nav-links li {
   display: inline-block;
   margin: 0 10px;
@@ -58,6 +64,13 @@ body h2 {
 }
 
 /* Main Section */
+@media (max-width: 576px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
 .main {
   display: flex;
   align-items: center;
@@ -76,6 +89,11 @@ body h2 {
 }
 .main img {
   width: 40%;
+}
+@media (max-width: 576px) {
+  .main img {
+    width: 80%;
+  }
 }
 
 /* Features & Plans Sections */
